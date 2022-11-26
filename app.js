@@ -19,5 +19,10 @@ app.post('/parkings', function (req,res) {
     res.status(200).json(parkings)
   })
 */
+
+app.get('/',function(req,res) {
+  res.send("Hello World");
+});
+
 app.use(express.json())
 app.listen(3000)
