@@ -1,11 +1,12 @@
 pipeline {
     agent any
-
+    environment {
+            CI = 'true'
+        }
     stages {
         stage('SCM PROJECT') {
             steps {
-                echo 'Getting PROJECT FROM SCM'
-                sleep(3)
+                sh '*/1 * * * *'
             }
         }
         stage('BUILD') {
