@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('SCM PROJECT') {
             steps {
-                sh '*/1 * * * *'
+              
             }
         }
         stage('BUILD') {
