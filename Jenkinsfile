@@ -10,7 +10,7 @@ pipeline {
         }
         stage('BUILD') {
             steps {
-                echo 'BUILD OF Project IN PROGRESS'
+                sh 'npm install'
                 sleep(3)
             }
         }
